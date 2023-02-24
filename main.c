@@ -22,7 +22,7 @@ int main(void)
     while (1) 
     {
 		
-		char num1[10], num2[10], operator = 0;
+		char num1[8], num2[8], operator = 0;
 		uint8_t i = 0;
 		
 		do 
