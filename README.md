@@ -2,7 +2,7 @@
 Basic calculator using 4x4 Keypad and 16x2 LCD interfacing with AVR (ATmega32)
 ## 1. How to build .hex
  
-* by any suitable IDE such as Atmel, MPLAB.
+* By any suitable IDE such as Atmel, MPLAB.
 
 ## 2. How to test on software
 
