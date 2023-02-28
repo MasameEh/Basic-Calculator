@@ -15,13 +15,11 @@
 
 int main(void)
 {
-	 label:LCD_init();
+	label:LCD_init();
 	keypad_init();
 	
-	
-    while (1) 
-    {
-		
+	while (1) 
+    	{
 		char num1[8], num2[8], operator = 0;
 		uint8_t i = 0;
 		
