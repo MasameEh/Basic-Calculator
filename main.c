@@ -18,8 +18,8 @@ int main(void)
 	label:LCD_init();
 	keypad_init();
 	
-	while (1) 
-    	{
+    while (1) 
+    {
 		char num1[8], num2[8], operator = 0;
 		uint8_t i = 0;
 		
@@ -94,7 +94,7 @@ int main(void)
 			LCD_clearscreen();
 			LCD_move_curser(3,0);
 			LCD_send_string(warning);
-			_delay_ms(100);
+			_delay_ms(1000);
 			LCD_clearscreen();
 			goto label;
 		}else if (num2[i]== 'A')
@@ -119,10 +119,10 @@ int main(void)
 			}else if (num2[i]== '+' || num2[i]== '-'|| num2[i]== '/' || num2[i]== '*')
 			{
 				char warning[] = "two numbers";
-				LCD_move_curser(3,0);
 				LCD_clearscreen();
+				LCD_move_curser(3,0);
 				LCD_send_string(warning);
-				_delay_ms(100);
+				_delay_ms(1000);
 				LCD_clearscreen();
 				goto label;
 			}else if (num2[i]== 'A')
