@@ -30,8 +30,12 @@ void calculate(char num1[] , char num2[], char op)
 		result = operand1 * operand2;
 		break;
 	}
-	
+	if (result == 0)
+	{
+		LCD_move_curser(1,1);
+		LCD_send_char(48);
+	}else{
 	LCD_move_curser(1,1);
 	LCD_send_int(result);
-	
+	}
 }
