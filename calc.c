@@ -34,8 +34,10 @@ void calculate(char num1[] , char num2[], char op)
 	{
 		LCD_move_curser(1,1);
 		LCD_send_char(48);
-	}else{
-	LCD_move_curser(1,1);
-	LCD_send_int(result);
+	}
+	else
+	{
+		LCD_move_curser(1,1);
+		LCD_send_int(result);
 	}
 }
