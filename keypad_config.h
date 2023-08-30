@@ -1,15 +1,19 @@
 /*
  * keypad_config.h
  *
- *  Author: Mohamed Sameh
- */ 
+ * Author: Mohamed Sameh
+ * Description: This header file provides The number of rows and columns and the pins to each.
+ * 
+ */
 
 
 #ifndef KEYPAD_CONFIG_H_
 #define KEYPAD_CONFIG_H_
+/* -------------- Includes -------------- */
 
-#define KEYPAD_RAW_NUM    4
-#define KEYPAD_COLUMN_NUM 4
+/* -------------- Macro Declarations ------------- */
+#define KEYPAD_RAW_NUM    		4
+#define KEYPAD_COLUMN_NUM 		4
 
 #define KEYPAD_RAW_ARR_VALUE {     \
 	{DIO_PORTA, DIO_PIN0},         \
@@ -36,7 +40,13 @@
 #define RELEASED_LEVEL  DIO_LEVEL_HIGH
 #define PRESSED_LEVEL   DIO_LEVEL_LOW
 
-#define NO_PRESS_VAL    0xff
+#define NO_PRESS_VAL    0
+
+/* -------------- Macro Functions Declarations --------------*/
+
+/* -------------- Data Types Declarations --------------  */
+
+/* -------------- Functions Declarations --------------*/
 
 
 #endif /* KEYPAD_CONFIG_H_ */
